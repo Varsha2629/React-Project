@@ -1,4 +1,3 @@
-import { divide } from 'lodash';
 import React, { useState } from 'react';
 // import styled from 'styled-components';
 import Button from '../../UI/Button/Button';
@@ -52,7 +51,7 @@ const MyInput = props => {
         <form onSubmit={formSubmitHandler}>
             <div className={`${styles['form-control']} ${!isValid && styles.invalid}`}>         
                 <label>My Goals</label>
-                <input type="text"  onChange={goalInputChangeHandler} />
+                <input type="text" onChange={goalInputChangeHandler} />
              </div> 
          <Button type="submit">Add Goal</Button>
         </form>
