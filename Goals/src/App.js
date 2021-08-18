@@ -19,9 +19,9 @@ const App = () => {
     });
   };
 
-  const deleteItemHandler = goalId => {
+  const deleteItemHandler = (goalId) => {
     setMyGoals(prevGoals => {
-      const updatedGoals = prevGoals.filter(goal => goal.id !== goalId);
+      const updatedGoals = prevGoals.filter((goal) => goal.id !== goalId);
       return updatedGoals;      
     })
   }
