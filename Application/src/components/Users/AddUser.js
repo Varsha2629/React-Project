@@ -7,7 +7,7 @@ import classes from './AddUser.module.css'
        const [enteredUsername, setEnteredUsername] = useState('');
        const[enteredAge, setEnteredAge] = useState('');
 
-    const addUserHandler = (event) => {
+    const addUserHandler = (event) => { 
         event.preventDefault(); // defalut javascript behaviar // page will be not reloa
         
         if(enteredUsername.trim().length === 0 || enteredAge.trim().length === 0){
@@ -16,7 +16,7 @@ import classes from './AddUser.module.css'
         if(+enteredAge < 1){
             return;
         }
-        console.log(enteredUsername, enteredAge)
+        props.onAddUser(enteredUsername, enteredAge);
         setEnteredUsername('');
         setEnteredAge('');  
         
