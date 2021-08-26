@@ -11,7 +11,7 @@ const MyGoalList = props => {
           key={goal.id}
           id={goal.id}
           onDelete={props.onDeleteItem}> 
-          {goal.text}
+                 {goal.text}
           
         </MyGoalItem>
       ))}
